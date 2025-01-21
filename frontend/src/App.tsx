@@ -2,7 +2,6 @@ import React from "react";
 import { Github, Twitter, Linkedin, Facebook, Download } from "lucide-react";
 import profileImage from "./assets/profile-CzN_0cZS.png";
 
-
 interface NavItem {
   label: string;
   href: string;
@@ -109,57 +108,123 @@ const App: React.FC = () => {
               <div className="grid grid-cols-3 gap-8 opacity-60">
                 {/* Company 1 */}
                 <div className="flex justify-center items-center">
-                  <img
-                    src="https://via.placeholder.com/100x50?text=Company+1"
-                    alt="Company 1 Logo"
-                    className="w-24 h-auto"
-                  />
+                  <img src="" alt="Company 1 Logo" className="w-24 h-auto" />
                 </div>
                 {/* Company 2 */}
                 <div className="flex justify-center items-center">
-                  <img
-                    src="https://via.placeholder.com/100x50?text=Company+2"
-                    alt="Company 2 Logo"
-                    className="w-24 h-auto"
-                  />
+                  <img src="" alt="Company 2 Logo" className="w-24 h-auto" />
                 </div>
                 {/* Company 3 */}
                 <div className="flex justify-center items-center">
-                  <img
-                    src="https://via.placeholder.com/100x50?text=Company+3"
-                    alt="Company 3 Logo"
-                    className="w-24 h-auto"
-                  />
+                  <img src="" alt="Company 3 Logo" className="w-24 h-auto" />
                 </div>
                 {/* Company 4 */}
                 <div className="flex justify-center items-center">
-                  <img
-                    src="https://via.placeholder.com/100x50?text=Company+4"
-                    alt="Company 4 Logo"
-                    className="w-24 h-auto"
-                  />
+                  <img src="" alt="Company 4 Logo" className="w-24 h-auto" />
                 </div>
                 {/* Company 5 */}
                 <div className="flex justify-center items-center">
-                  <img
-                    src="https://via.placeholder.com/100x50?text=Company+5"
-                    alt="Company 5 Logo"
-                    className="w-24 h-auto"
-                  />
+                  <img src="" alt="Company 5 Logo" className="w-24 h-auto" />
                 </div>
                 {/* Company 6 */}
                 <div className="flex justify-center items-center">
-                  <img
-                    src="https://via.placeholder.com/100x50?text=Company+6"
-                    alt="Company 6 Logo"
-                    className="w-24 h-auto"
-                  />
+                  <img src="" alt="Company 6 Logo" className="w-24 h-auto" />
                 </div>
               </div>
             </marquee>
           </div>
         </div>
       </main>
+      <div className="min-h-screen bg-black text-white">
+        <div>
+          <h1 className="flex justify-center mt-3 text-4xl font-bold px-32 ">
+            Works & Projects
+          </h1>
+          <p className="text-gray-400 mt-5 text-lg text-center">
+            Check out some of my design projects, meticulously crafted with love
+            and dedication, each one reflecting the passion and soul I poured
+            into every detail.
+          </p>
+          <div className="flex justify-center items-center py-10 gap-5">
+            <div className="max-w-sm rounded overflow-hidden shadow-lg bg-white">
+              <img
+                className="w-full"
+                src="https://via.placeholder.com/400"
+                alt="Card Image"
+              />
+              <div className="px-6 py-4">
+                <div className="font-bold text-xl mb-2">Card Title</div>
+                <p className="text-gray-700 text-base">
+                  This is a simple card component with a title, description, and
+                  an image. You can easily modify it to suit your needs.
+                </p>
+              </div>
+              <div className="px-6 pt-4 pb-2">
+                <button className="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-700">
+                  Read More
+                </button>
+              </div>
+            </div>
+            <div className="max-w-sm rounded overflow-hidden shadow-lg bg-white">
+              <img
+                className="w-full"
+                src="https://via.placeholder.com/400"
+                alt="Card Image"
+              />
+              <div className="px-6 py-4">
+                <div className="font-bold text-xl mb-2">Card Title</div>
+                <p className="text-gray-700 text-base">
+                  This is a simple card component with a title, description, and
+                  an image. You can easily modify it to suit your needs.
+                </p>
+              </div>
+              <div className="px-6 pt-4 pb-2">
+                <button className="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-700">
+                  Read More
+                </button>
+              </div>
+            </div>
+            <div className="max-w-sm rounded overflow-hidden shadow-lg bg-white">
+              <img
+                className="w-full"
+                src="https://via.placeholder.com/400"
+                alt="Card Image"
+              />
+              <div className="px-6 py-4">
+                <div className="font-bold text-xl mb-2">Card Title</div>
+                <p className="text-gray-700 text-base">
+                  This is a simple card component with a title, description, and
+                  an image. You can easily modify it to suit your needs.
+                </p>
+              </div>
+              <div className="px-6 pt-4 pb-2">
+                <button className="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-700">
+                  Read More
+                </button>
+              </div>
+            </div>
+            <div className="max-w-sm rounded overflow-hidden shadow-lg bg-white">
+              <img
+                className="w-full"
+                src="https://via.placeholder.com/400"
+                alt="Card Image"
+              />
+              <div className="px-6 py-4">
+                <div className="font-bold text-xl mb-2">Card Title</div>
+                <p className="text-gray-700 text-base">
+                  This is a simple card component with a title, description, and
+                  an image. You can easily modify it to suit your needs.
+                </p>
+              </div>
+              <div className="px-6 pt-4 pb-2">
+                <button className="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-700">
+                  Read More
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
