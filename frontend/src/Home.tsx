@@ -72,7 +72,7 @@ const Home = () => {
   const navItems = [
     { label: "Home", href: "/" },
     { label: "About", href: "/about" },
-    { label: "Service", href: "#" },
+    { label: "Service", href: "/service" },
     { label: "Works", href: "#" },
     { label: "Contact", href: "#" },
   ];

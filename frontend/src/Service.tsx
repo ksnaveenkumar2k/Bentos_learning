@@ -6,6 +6,9 @@ import {
   Facebook,
   ArrowDownIcon,
   Heart,
+  Globe,
+  Feather,
+  Smartphone,
 } from "lucide-react";
 import { LayoutGrid } from "lucide-react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
@@ -152,21 +155,25 @@ const Home = () => {
     },
   ];
 
-  const education = [
+ 
+  const services = [
     {
-      period: "2013 - 2015",
-      title: "Bachelor Degree of Information Technology",
-      institution: "State University bangladesh",
+      icon: <Globe className="w-12 h-12 text-white" />,
+      title: "Brand Identity Design",
+      description:
+        "Bentos gives you the blocks & kits you need to create a true website within minutes.",
     },
     {
-      period: "2021 - 2024",
-      title: "Higher secoundery Education",
-      institution: "Premium College United VC",
+      icon: <Feather className="w-12 h-12 text-white" />,
+      title: "Website Design",
+      description:
+        "Bentos gives you the blocks & kits you need to create a true website within minutes.",
     },
     {
-      period: "2020 - 2021",
-      title: "UI/UX Design",
-      institution: "Webster College",
+      icon: <Smartphone className="w-12 h-12 text-white" />,
+      title: "Application Design",
+      description:
+        "Bentos gives you the blocks & kits you need to create a true website within minutes.",
     },
   ];
 
@@ -208,93 +215,32 @@ const Home = () => {
       </nav>
 
       {/* Main Section */}
-      <main className="container mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-2 gap-8">
-        {/* Profile Section */}
-        <div className="bg-zinc-900 rounded-3xl p-8 flex flex-col items-center">
-          <div className="relative w-64 h-72">
-            <div className="absolute inset-0 bg-[#FF5733] rounded-full"></div>
-            <img
-              src={profileImage}
-              alt="Bentos Walker"
-              className="absolute inset-0 w-full h-full object-cover rounded-full"
-            />
-          </div>
-          <h2 className="text-3xl font-bold mt-6">Bentos Walker</h2>
-          <p className="text-gray-400 mt-2 text-center">
-            I am a Web Designer based in San Francisco.
-          </p>
-          <div className="flex gap-6 mt-6">
-            <a href="#" className="text-gray-400 hover:text-white">
-              <Facebook size={24} />
-            </a>
-            <a href="#" className="text-gray-400 hover:text-white">
-              <Twitter size={24} />
-            </a>
-            <a href="#" className="text-gray-400 hover:text-white">
-              <Linkedin size={24} />
-            </a>
-            <a href="#" className="text-gray-400 hover:text-white">
-              <Github size={24} />
-            </a>
-          </div>
-        </div>
-
-        {/* About Section */}
-        <div className="flex flex-col gap-8">
-          <div className="bg-zinc-900 rounded-3xl p-8">
-            <p className="text-gray-400">Hello There!</p>
-            <h2 className="text-4xl font-bold mt-4 leading-tight">
-              I'm Bentos Walker, a product designer crafting user-centric design
-              with pixel-perfect precision.
-            </h2>
-            <div className="flex items-center gap-2 mt-6">
-              <div className="w-2 h-2 rounded-full"></div>
-              <p className="text-gray-400">
-                I am a San francisco-based product designer with a focus on web
-                design, illustration, a visual development. I have a diverse
-                range of experience having worked across various fields and
-                industries.
-              </p>
-            </div>
-            <button
-              onClick={handleDownloadCV}
-              className="mt-6 bg-[#FF5733] text-white px-6 py-3 rounded-lg hover:bg-[#E64A2E] transition flex items-center gap-2"
-            >
-              Get in Touch
-              {/* <Download size={20} /> */}
-            </button>
-          </div>
-        </div>
-      </main>
-      <section className="bg-black px-6 py-16">
-        <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
-          {/* Experience Column */}
-          <div className="bg-zinc-900 rounded-3xl p-8">
-            <h2 className="text-2xl font-bold text-white mb-8">Experience</h2>
-            {experiences.map((exp, index) => (
-              <Card
-                key={index}
-                period={exp.period}
-                title={exp.title}
-                subtitle={exp.company}
-              />
-            ))}
+      <section className="bg-black py-20">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-16">
+            <p className="text-gray-400 mb-2">Services</p>
+            <h2 className="text-4xl font-bold text-white">Quality Services</h2>
           </div>
 
-          {/* Education Column */}
-          <div className="bg-zinc-900 rounded-3xl p-8">
-            <h2 className="text-2xl font-bold text-white mb-8">Education</h2>
-            {education.map((edu, index) => (
-              <Card
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {services.map((service, index) => (
+              <div
                 key={index}
-                period={edu.period}
-                title={edu.title}
-                subtitle={edu.institution}
-              />
+                className="bg-zinc-900 rounded-3xl p-8 transition-transform duration-300 hover:transform hover:-translate-y-2"
+              >
+                <div className="mb-6">{service.icon}</div>
+                <h3 className="text-xl font-semibold text-white mb-4">
+                  {service.title}
+                </h3>
+                <p className="text-gray-400 leading-relaxed">
+                  {service.description}
+                </p>
+              </div>
             ))}
           </div>
         </div>
       </section>
+
       {/* New Testimonials Section */}
       <section className="bg-black px-6 py-16">
         <div className="container mx-auto">
